@@ -13,6 +13,7 @@ $  go run cmd/server/main.go
 
 ## クライアント起動
 ```shell
-grpc-connect-go $ go run cmd/client/main.go 
+$ go run cmd/client/main.go 
+
 2022/06/24 22:22:33 Hello, Jane!
 ```
