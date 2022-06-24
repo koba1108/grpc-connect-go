@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package hello.v1;
+
+option go_package = "grpc-connect-go/gen/hello/v1;helloV1";
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string hello = 1;
+}
+
+service HelloService {
+  rpc Hello(HelloRequest) returns (HelloResponse) {}
+  rpc HelloStream(HelloRequest) returns (stream HelloResponse) {}
+}
